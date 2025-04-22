@@ -15,4 +15,4 @@ A shell script for setting up [NextFlow](https://nextflow.io/docs/latest/index.h
 3. Run the script: `./install_nextflow.sh`
 4. For future sessions, initialize the environment with:
    ```bash
-   source $WORK/software/nextflow_env/setup.sh```
+   source $WORK/software/nextflow_env/setup.sh
