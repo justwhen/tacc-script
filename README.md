@@ -1,6 +1,7 @@
-# tacc-script
+# Scripts for Installing Utils
 
-A shell script for setting up [NextFlow](https://nextflow.io/docs/latest/index.html) and Java environments on TACC HPC systems following best practices for file system usage.
+# install_nextflow.sh - tacc-script
+A shell script for setting up [NextFlow](https://nextflow.io/docs/latest/index.html) and Java environments on TACC HPC systems following best practices for file system usage. Use on TACC.
 
 ## Features
 - Installs NextFlow in your $WORK directory (following TACC recommendations)
@@ -15,4 +16,19 @@ A shell script for setting up [NextFlow](https://nextflow.io/docs/latest/index.h
 3. Run the script: `./install_nextflow.sh`
 4. For future sessions, initialize the environment with:
    ```bash
-   source $WORK/software/nextflow_env/setup.sh
+   source $WORK/software/nextflow_env/setup.sh```
+
+# setup_conda.sh - Pazuzu
+A shell script for adding MiniConda to your .bashrc.
+
+## Features
+- Adds the conda source line to ~/.bashrc
+- Sources conda for the current session
+- Tests that conda is working
+
+## Usage
+1. Save script to $HOME on Pazuzu
+2. Make it executable: `chmod +x setup_conda.sh`
+3. Run the script `./setup_conda.sh`
+
+# install_jupyter_kernel.sh - Pazuzu
